@@ -6,6 +6,7 @@
     ./disko-config.nix
 
     ../../modules/nixos/boot.nix
+    ../../modules/nixos/hardware.nix
     ../../modules/nixos/networking.nix
     ../../modules/nixos/graphics/common.nix
     ../../modules/nixos/graphics/nvidia-intel.nix
