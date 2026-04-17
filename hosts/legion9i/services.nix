@@ -5,7 +5,7 @@
   services.thermald.enable = true;
 
   environment.systemPackages = with pkgs; [
-    cpupower
+    config.boot.kernelPackages.cpupower
   ];
 
   programs.coolercontrol.enable = true;
