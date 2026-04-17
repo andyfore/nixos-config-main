@@ -30,8 +30,8 @@
 
   boot.kernelParams = [
     "nvidia-drm.modeset=1"
-    "i915.enable_psr=0"
-    "i915.enable_guc=3"
+    #"i915.enable_psr=0"
+    #"i915.enable_guc=3"
   ];
 
   powerManagement.cpuFreqGovernor = lib.mkDefault "schedutil";
