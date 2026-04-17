@@ -4,6 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ./disko-config.nix
+    ./services.nix
 
     ../../modules/nixos/boot.nix
     ../../modules/nixos/hardware.nix
