@@ -2,7 +2,7 @@
 
 {
   services.power-profiles-daemon.enable = true;
-  services.thermald.enable = true;A
+  services.thermald.enable = true;
 
   environment.systemPackages = with pkgs; [
     cpupower
