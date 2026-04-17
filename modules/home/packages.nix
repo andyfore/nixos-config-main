@@ -77,6 +77,7 @@
       loupe              # Image viewer
       cider              # Apple Music client
       spotify
+      mesa-demos
     ]) ++
     
     # Gaming
