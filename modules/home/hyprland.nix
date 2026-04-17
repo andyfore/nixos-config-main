@@ -18,6 +18,7 @@ in
 
     # Important with UWSM
     systemd.enable = true;
+    systemd,variables = [ "--all" ];
 
     settings = {
       monitor = monitorConfig;
