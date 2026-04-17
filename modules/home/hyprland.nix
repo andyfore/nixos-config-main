@@ -13,12 +13,18 @@ in
 {
   wayland.windowManager.hyprland = {
     enable = true;
+    package = null;
+    portalPackage = null;
 
     # Important with UWSM
-    systemd.enable = false;
+    systemd.enable = true;
 
     settings = {
       monitor = monitorConfig;
+
+      env = [
+        "AQ_DRM_DEVICES,/dev/dri/by-path/pci-0000:00:02.0-card:/dev/dri/by-path/pci-0000:01:00.0-card"
+      ];
 
       exec-once = [
         "waybar"

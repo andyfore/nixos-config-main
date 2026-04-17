@@ -23,4 +23,8 @@
   home.stateVersion = "26.05";
 
   programs.home-manager.enable = true;
+
+  home.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+  };
 }
