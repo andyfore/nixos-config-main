@@ -144,6 +144,7 @@
       carapace
       onefetch
       p7zip
+      powertop
     ]) ++
 
     lib.optionals (hostname == "legion9i") [
