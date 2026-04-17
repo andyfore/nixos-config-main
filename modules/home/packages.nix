@@ -145,6 +145,7 @@
       onefetch
       p7zip
       powertop
+      nvme-cli
     ]) ++
 
     lib.optionals (hostname == "legion9i") [
