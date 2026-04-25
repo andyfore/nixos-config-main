@@ -46,7 +46,6 @@
       };
     in {
       nixosConfigurations = {
-        a16 = mkHost "a16";
         legion9i = mkHost "legion9i";
       };
     };
