@@ -1,7 +1,7 @@
 { hostname, ... }:
 
 let
-  monitorConfig = "eDP-1,3200x2000@60.00000,auto,2"
+  monitorConfig = "eDP-1,3200x2000@60.00000,auto,2";
 in
 {
   wayland.windowManager.hyprland = {
