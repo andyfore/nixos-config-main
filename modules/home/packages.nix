@@ -76,7 +76,7 @@
       cliphist           # Clipboard history manager
       loupe              # Image viewer
       cider              # Apple Music client
-      spotify
+#      spotify
       mesa-demos
     ]) ++
     
