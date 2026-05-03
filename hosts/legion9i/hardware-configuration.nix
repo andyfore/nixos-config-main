@@ -25,18 +25,6 @@
     enable32Bit = true;
   };
 
-  services.fwupd.enable = true;
-  services.xserver.videoDrivers = [ "nvidia" ];
-
-  boot.kernelParams = [
-    "nvidia-drm.modeset=1"
-    "i915.enable_psr=1"
-    "i915.enable_dc=4"
-    #"i915.enable_psr=0"
-    #"i915.enable_guc=3"
-  ];
-
-  powerManagement.cpuFreqGovernor = lib.mkDefault "schedutil";
 
   # Intentionally no fileSystems entries yet.
 }

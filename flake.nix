@@ -18,6 +18,11 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs@{ nixpkgs, home-manager, disko, ... }:
@@ -40,7 +45,7 @@
             home-manager.extraSpecialArgs = {
               inherit inputs hostname;
             };
-            home-manager.users.andyfore = import ./modules/home;
+	    home-manager.users.andyfore = import ./hosts/${hostname}/home;
           }
         ];
       };

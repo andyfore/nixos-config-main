@@ -5,20 +5,23 @@
     ./hardware-configuration.nix
     ./disko-config.nix
     ./services.nix
+    ./gpu.nix
+    ./kernel-tuning.nix
+    ./drm-symlinks.nix
 
     ../../modules/nixos/boot.nix
     ../../modules/nixos/hardware.nix
     ../../modules/nixos/networking.nix
     ../../modules/nixos/graphics/common.nix
-    ../../modules/nixos/graphics/nvidia-intel.nix
     ../../modules/nixos/audio.nix
     ../../modules/nixos/bluetooth.nix
     ../../modules/nixos/users.nix
     ../../modules/nixos/packages.nix
-    ../../modules/nixos/greetd.nix
+    #../../modules/nixos/greetd.nix
     ../../modules/nixos/hyprland.nix
     ../../modules/nixos/services.nix
     ../../modules/nixos/storage-permissions.nix
+    ../../hosts/legion9i/drm-symlinks.nix
   ];
 
   networking.hostName = "voyager2";
