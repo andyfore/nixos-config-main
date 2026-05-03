@@ -10,8 +10,6 @@
     systemd.enable = false;
 
     settings = {
-      monitor = monitorConfig;
-
       exec-once = [
         "waybar"
         "mako"
