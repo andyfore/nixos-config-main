@@ -9,5 +9,5 @@
     "nvme_core.default_ps_max_latency_us=5500"
   ];
 
-  powerManagement.cpuFreqGovernor = lib.mkDefault "schedutil";
+
 }

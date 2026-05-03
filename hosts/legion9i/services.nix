@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   services.power-profiles-daemon.enable = true;
@@ -7,6 +7,7 @@
   services.fwupd.enable = true;
 
   powerManagement.cpuFreqGovernor = "powersave";
+  powerManagement.cpuFreqGovernor = lib.mkDefault "schedutil";
 
   environment.systemPackages = with pkgs; [
     config.boot.kernelPackages.cpupower
