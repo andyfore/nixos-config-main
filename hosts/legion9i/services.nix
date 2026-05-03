@@ -6,7 +6,7 @@
   services.fwupd.enable = true;
 
   powerManagement.cpuFreqGovernor = "powersave";
-  powerManagement.cpuFreqGovernor = lib.mkDefault "schedutil";
+  #powerManagement.cpuFreqGovernor = lib.mkDefault "schedutil";
 
   environment.systemPackages = with pkgs; [
     config.boot.kernelPackages.cpupower
