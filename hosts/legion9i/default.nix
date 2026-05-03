@@ -21,7 +21,6 @@
     ../../modules/nixos/hyprland.nix
     ../../modules/nixos/services.nix
     ../../modules/nixos/storage-permissions.nix
-    ../../hosts/legion9i/drm-symlinks.nix
   ];
 
   networking.hostName = "voyager2";
